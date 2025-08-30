@@ -1,12 +1,137 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>這是我的第一個網站 🎉</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYvgnYsrrWjkXooWQIT697DELl9NR3FJSRwNQ0YPRDcHyU_g/viewform?embedded=true" width="640" height="461" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-  </body>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>尚藝室內設計</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    /* 導覽列 */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      color: #fff;
+      padding: 14px 40px;
+      position: sticky;
+      top: 0;
+    }
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Banner */
+    .banner {
+      height: 400px;
+      background: url("https://picsum.photos/1600/600?blur=2") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 公告區 */
+    .notice {
+      background: #333;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* 介紹卡片 */
+    .intro {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      gap: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      align-items: center;
+    }
+    .intro img {
+      max-width: 240px;
+      border-radius: 12px;
+    }
+    .intro-text {
+      flex: 1;
+    }
+    .intro-text h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .intro-text p {
+      margin: 0.6em 0;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="logo">尚藝室內設計</div>
+    <ul>
+      <li><a href="#">公司簡介</a></li>
+      <li><a href="#">作品案例</a></li>
+      <li><a href="#">影音媒體</a></li>
+      <li><a href="#">最新消息</a></li>
+      <li><a href="#">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner"></section>
+
+  <!-- 公告 -->
+  <div class="notice">
+    ⚠ 近期接獲通報，有不明人士冒用本公司員工名義，請大家提高警覺！
+  </div>
+
+  <!-- 介紹 -->
+  <section class="intro">
+    <img src="https://picsum.photos/300/400" alt="人物照片">
+    <div class="intro-text">
+      <h2>尚藝室內設計 / 台北、台中專業團隊</h2>
+      <p>正匠，講究分毫不差的精準；藝術家，追求更高層次的美感突破。</p>
+      <p>而室內設計則是器用與格調具體化的結晶。</p>
+      <p style="color:#666; font-size:14px;">「空間的張力不在做了多少設計，而在鋪陳了多少生活的感受。」</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 尚藝室內設計. All Rights Reserved.
+  </footer>
+</body>
 </html>
